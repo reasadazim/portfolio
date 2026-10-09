@@ -1,0 +1,67 @@
+/* Gentle, once-per-visit reveals below the hero. Content stays visible without JS. */
+.section-pad .section-reveal {
+  opacity: 0;
+  translate: 0 16px;
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+    translate 0.75s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms);
+}
+.section-pad .section-reveal.is-revealed {
+  opacity: 1;
+  translate: 0 0;
+}
+.section-pad .service-row.section-reveal {
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+    translate 0.75s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+    padding 0.35s ease;
+}
+.section-pad .project-heading h3,
+.section-pad .process-grid h3 {
+  transition: color 0.35s ease;
+}
+.section-pad .service-symbol {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.section-pad .tech-tags li {
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    translate 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.section-pad .contact-button {
+  transition-duration: 0.35s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .section-pad .project-card:hover .project-heading h3,
+  .section-pad .process-grid article:hover h3 {
+    color: var(--section-accent);
+  }
+  .section-pad .service-row:hover .service-symbol {
+    transform: translate(2px, -2px) rotate(5deg);
+  }
+  .section-pad .tech-tags li:hover {
+    translate: 0 -2px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .section-pad .section-reveal {
+    opacity: 1;
+    translate: none;
+  }
+  .section-pad .section-reveal,
+  .section-pad .service-row.section-reveal,
+  .section-pad .project-heading h3,
+  .section-pad .process-grid h3,
+  .section-pad .service-symbol,
+  .section-pad .tech-tags li,
+  .section-pad .contact-button {
+    transition: none;
+  }
+  .section-pad .service-row:hover .service-symbol {
+    transform: none;
+  }
+  .section-pad .tech-tags li:hover {
+    translate: none;
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.local
+server/vendor/
+server/config.local.php
+server/runtime/
+server/.env

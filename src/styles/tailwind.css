@@ -1,0 +1,5 @@
+/* Use utilities without Preflight so the established typography and spacing remain intact. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source '../';

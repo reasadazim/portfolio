@@ -1,0 +1,270 @@
+{
+  "name": "Reasad Azim",
+  "location": "Mymensingh, Bangladesh",
+  "experience": "10+ years",
+  "description": "Full-stack web developer and data scraping specialist helping businesses build web applications, professional websites, structured web data, and AI automation.",
+  "approach": "Understand requirements and business goals, build a practical solution, then review and refine the details.",
+  "upwork": {
+    "url": "https://www.upwork.com/freelancers/~016ff218f110279cd1",
+    "checkedAt": "2026-10-09",
+    "stats": [
+      {
+        "value": "Top Rated",
+        "label": "Upwork status"
+      },
+      {
+        "value": "100%",
+        "label": "Job Success"
+      },
+      {
+        "value": "155",
+        "label": "Total jobs"
+      },
+      {
+        "value": "3.9K",
+        "label": "Total hours"
+      },
+      {
+        "value": "4.9 / 5",
+        "label": "108 ratings"
+      }
+    ],
+    "testimonials": [
+      {
+        "quote": "He is a very dedicated person and very pleasant to work with, highly recommended.",
+        "client": "Sebastian G.",
+        "project": "Repair comments on my website",
+        "date": "2025-01-11",
+        "rating": "5.0 / 5"
+      },
+      {
+        "summary": "Pleased with the SaaS ROI calculator and how closely it followed the requested design.",
+        "client": "Patrick S.",
+        "project": "Seeking GHL Expert to Create Cool Calculator",
+        "date": "2023-12-26",
+        "rating": "5.0 / 5"
+      },
+      {
+        "summary": "Appreciated the blend of development ability, thoughtful solutions, clear communication, and professionalism.",
+        "client": "Max B.",
+        "project": "Create eCommerce Website Featuring Secure Access To A Video",
+        "date": "2023-10-11",
+        "rating": "5.0 / 5"
+      },
+      {
+        "summary": "Valued the effort beyond the original request and looked forward to working together again.",
+        "client": "Maurice W.",
+        "project": "Add plugin to workpress site",
+        "date": "2023-10-09",
+        "rating": "5.0 / 5"
+      }
+    ]
+  },
+  "expertise": [
+    {
+      "title": "Languages",
+      "tools": [
+        "Python",
+        "PHP",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Frameworks & libraries",
+      "tools": [
+        "Django",
+        "Laravel",
+        "Next.js",
+        "React",
+        "Vue.js",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "title": "Databases",
+      "tools": [
+        "MySQL",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "title": "Content management system",
+      "tools": [
+        "WordPress"
+      ]
+    },
+    {
+      "title": "Cloud & hosting",
+      "tools": [
+        "AWS",
+        "WHM",
+        "cPanel"
+      ]
+    }
+  ],
+  "email": "contact@reasadazim.com",
+  "enquiryEmail": "riasadazim@gmail.com",
+  "url": "https://reasadazim.com/",
+  "profiles": [
+    "https://www.upwork.com/freelancers/~016ff218f110279cd1",
+    "https://github.com/reasadazim",
+    "https://www.linkedin.com/in/a-m-reasad-azim-bappy-b42057a4/"
+  ],
+  "services": [
+    {
+      "title": "Full-stack applications",
+      "description": "Custom web applications, with the frontend and backend working together—from your first requirements to a usable product."
+    },
+    {
+      "title": "AI automation & agents",
+      "description": "Purposeful AI agents and automated workflows that connect your tools and take repetitive tasks off your plate."
+    },
+    {
+      "title": "Websites & WordPress",
+      "description": "Professional websites and custom WordPress development, built around your brand, content, and business goals."
+    },
+    {
+      "title": "Custom WordPress Plugin Development",
+      "description": "Custom plugins that extend your WordPress website with the features, integrations, and workflows your business needs."
+    },
+    {
+      "title": "Backends & APIs",
+      "description": "Backend development and API integrations that make your application work with the services it depends on."
+    },
+    {
+      "title": "Frontend experiences",
+      "description": "Responsive interfaces that feel clear and easy to use on desktop, tablet, and mobile."
+    },
+    {
+      "title": "Web scraping & data",
+      "description": "Web scraping, data extraction, and automation that turn scattered web information into structured, useful data."
+    },
+    {
+      "title": "Database design",
+      "description": "MySQL and PostgreSQL database design and integration to keep your information organized and your application connected."
+    }
+  ],
+  "projects": [
+    {
+      "title": "MAGTK",
+      "description": "An ecommerce website for MAGTK, combining WordPress development with a custom plugin tailored to the store’s requirements.",
+      "tags": [
+        "WordPress",
+        "Custom plugin",
+        "Ecommerce"
+      ],
+      "url": "https://magtk.com/"
+    },
+    {
+      "title": "Caravan Concierge",
+      "description": "A business application built with Laravel and Tailwind CSS for managing Caravan Concierge’s operations across multiple locations, with a dashboard for revenue and occupancy, CRM, customer agreements, and reporting.",
+      "tags": [
+        "Laravel",
+        "Tailwind CSS",
+        "CRM",
+        "Reporting"
+      ],
+      "url": "https://www.caravanconcierge.com.au/"
+    },
+    {
+      "title": "DL Tickets",
+      "description": "A WordPress event ticketing website with a custom plugin for interactive seat plans, helping visitors explore seating sections, check seat prices, and select seats for their event.",
+      "tags": [
+        "WordPress",
+        "Custom plugin",
+        "Interactive seat plans"
+      ],
+      "url": "https://dltickets.com/"
+    },
+    {
+      "title": "Admission Application System",
+      "description": "A postgraduate program application management system for the University of Dhaka, built with Laravel and Tailwind CSS. It brings admission applications, filtering, search, exports, seat labels, and admission test results into one administrative interface.",
+      "tags": [
+        "Laravel",
+        "Tailwind CSS",
+        "Application management"
+      ],
+      "url": "http://mph.dpsdu.edu.bd/"
+    },
+    {
+      "title": "Ashbury Service Center",
+      "description": "A car servicing booking system for Ashbury Service Center, connected to the MechanicDesk platform through an API. Its calendar helps customers find available dates and book the services their vehicle needs.",
+      "tags": [
+        "Booking system",
+        "Availability calendar",
+        "Car servicing"
+      ],
+      "url": "https://asc.bookmymechanic.com/"
+    },
+    {
+      "title": "Book My Mechanic",
+      "description": "A WordPress website for Book My Mechanic, presenting its online booking solution for mechanic workshops with information on how it works, pricing, frequently asked questions, and getting started.",
+      "tags": [
+        "WordPress",
+        "Business website",
+        "Online bookings"
+      ],
+      "url": "https://bookmymechanic.com/"
+    },
+    {
+      "title": "Prime Capital",
+      "description": "A WordPress website for Prime Capital, presenting its equipment leasing services and helping businesses explore leasing options, resources, and application information.",
+      "tags": [
+        "WordPress",
+        "Business website",
+        "Equipment leasing"
+      ],
+      "url": "https://pcclease.com/"
+    },
+    {
+      "title": "Ever Active Schools",
+      "description": "A WordPress website for Ever Active Schools, bringing together programs, events, educational resources, and ways to support healthier futures for children and youth.",
+      "tags": [
+        "WordPress",
+        "Charity website",
+        "Educational resources"
+      ],
+      "url": "https://www.everactive.org/"
+    },
+    {
+      "title": "Ahsanullah University of Science and Technology",
+      "description": "A university website built with Laravel and Vue.js, bringing together academic programs, admissions information, campus updates, and resources for students, faculty, and alumni.",
+      "tags": [
+        "Laravel",
+        "Vue.js",
+        "Education"
+      ],
+      "url": "https://www.aust.edu/"
+    },
+    {
+      "title": "Instagrabber",
+      "description": "A Django application for extracting and downloading Instagram content, with a URL-based interface for photos, videos, reels, profile images, stories, and highlights.",
+      "tags": [
+        "Django",
+        "Web scraping",
+        "Content extraction"
+      ],
+      "url": "https://instagrabber.reasadazim.com/"
+    },
+    {
+      "title": "TikTokGrabber",
+      "description": "A web application for downloading TikTok videos and stories, with a simple URL-based interface that lets users paste a link and download their content.",
+      "tags": [
+        "Content extraction",
+        "Video downloads",
+        "Story downloads"
+      ],
+      "url": "https://tiktokgrabber.reasadazim.com/"
+    },
+    {
+      "title": "Refugee Girls Worldwide",
+      "description": "A Squarespace website for Refugee Girls Worldwide, presenting the charity’s mission, initiatives, field missions, and events, with ways for visitors to connect, give, and support its work.",
+      "tags": [
+        "Squarespace",
+        "Charity website",
+        "Community engagement"
+      ],
+      "url": "https://rgwcanada.org/"
+    }
+  ]
+}

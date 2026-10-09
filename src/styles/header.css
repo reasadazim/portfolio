@@ -1,0 +1,111 @@
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .header {
+    /* Release the entrance animation's opacity layer so the panel can blur the page. */
+    animation-fill-mode: backwards;
+  }
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border: 1px solid rgba(238, 238, 230, 0.16);
+    border-radius: 12px;
+    background: rgba(238, 238, 230, 0.04);
+    color: var(--paper);
+    cursor: pointer;
+  }
+  .menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 1.5px;
+    border-radius: 2px;
+    background: currentColor;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+  .menu-open .menu-toggle span:first-child {
+    transform: translateY(6.5px) rotate(45deg);
+  }
+  .menu-open .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-open .menu-toggle span:last-child {
+    transform: translateY(-6.5px) rotate(-45deg);
+  }
+  .header .hero-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 24px;
+    right: 24px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px 22px;
+    border: 1px solid rgba(238, 238, 230, 0.18);
+    border-radius: 18px;
+    background: rgba(24, 24, 24, 0.96);
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.25);
+    max-height: calc(100svh - 116px);
+    overflow-y: auto;
+  }
+  .header.menu-open {
+    backdrop-filter: none;
+  }
+  .header.menu-open .hero-nav {
+    display: flex;
+    animation: menu-reveal 0.22s ease-out;
+  }
+  .header .hero-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 54px;
+    padding: 14px 0;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+  }
+  .header .hero-nav a + a {
+    border-top: 1px solid rgba(238, 238, 230, 0.1);
+  }
+  .header .hero-nav a:hover {
+    color: var(--accent);
+  }
+  @supports (
+    (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))
+  ) {
+    .header .hero-nav {
+      background: rgba(28, 28, 28, 0.68);
+      backdrop-filter: blur(24px) saturate(140%);
+      -webkit-backdrop-filter: blur(24px) saturate(140%);
+    }
+  }
+}
+
+@keyframes menu-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-toggle span,
+  .header.menu-open .hero-nav {
+    animation: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "reasadazim/portfolio-assistant",
+  "description": "Private PHP backend for the portfolio chat assistant",
+  "require": {
+    "php": ">=8.2",
+    "ext-curl": "*",
+    "ext-mbstring": "*",
+    "phpmailer/phpmailer": "^7.0"
+  },
+  "config": {
+    "allow-plugins": false
+  }
+}

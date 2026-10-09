@@ -1,0 +1,661 @@
+:root {
+  color-scheme: dark;
+  --paper: #eeeee6;
+  --accent: #b17cf0;
+  --motion-x: 0px;
+  --motion-y: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  background: #1b1b1b;
+  color: var(--paper);
+  font-family: "Century Gothic", "Trebuchet MS", Arial, sans-serif;
+}
+body {
+  min-width: 280px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.hero {
+  position: relative;
+  min-height: 740px;
+  height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+}
+.portrait {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  transform: translate(var(--motion-x), var(--motion-y));
+  will-change: transform;
+}
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% top;
+  transform: scaleX(-1);
+  filter: grayscale(1);
+}
+.shade {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(90deg, rgba(22, 22, 22, 0.65), transparent 67%),
+    linear-gradient(0deg, rgba(18, 18, 18, 0.45), transparent 30%);
+}
+.header {
+  position: absolute;
+  top: 40px;
+  left: 48px;
+  right: 48px;
+}
+.wordmark {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--accent);
+}
+.wordmark span {
+  font-size: 11px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 1px 0 0 3px;
+}
+.wordmark:focus-visible {
+  outline: 2px solid var(--paper);
+  outline-offset: 8px;
+}
+.header-note {
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  color: #c6c4c1;
+}
+.orbit {
+  position: absolute;
+  left: 43%;
+  top: 35%;
+  width: 280px;
+  height: 230px;
+  transform: translate(
+    calc(var(--motion-x) * -1.5),
+    calc(var(--motion-y) * -1.5)
+  );
+  will-change: transform;
+}
+.orbit span {
+  position: absolute;
+  display: block;
+}
+.ring {
+  left: 0;
+  top: 105px;
+  width: 120px;
+  height: 120px;
+  border: 35px solid var(--paper);
+  border-radius: 50%;
+}
+.disc {
+  left: 95px;
+  top: 0;
+  width: 120px;
+  height: 120px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+.moon {
+  left: 205px;
+  top: 90px;
+  width: 48px;
+  height: 48px;
+  background: var(--paper);
+  border-radius: 50%;
+}
+.orbit .coordinate {
+  top: 245px;
+  left: 0;
+  font: 10px monospace;
+  letter-spacing: 0.8px;
+  color: #c9c7c0;
+  opacity: 0.55;
+}
+.intro {
+  position: absolute;
+  left: 48px;
+  bottom: 115px;
+}
+.specialties {
+  margin: 0 0 48px;
+  font-size: clamp(25px, 3.15vw, 49px);
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.2px;
+}
+h1 {
+  font-size: clamp(26px, 2.5vw, 38px);
+  letter-spacing: 3px;
+  margin: 0 0 12px;
+  font-weight: 700;
+}
+.role {
+  font-size: clamp(23px, 2.35vw, 35px);
+  letter-spacing: 2px;
+  color: #bcbab7;
+  margin: 0;
+}
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  color: #aaa9a5;
+  margin: 22px 0 0;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 48px;
+  right: 48px;
+  height: 64px;
+  border-top: 1px solid #ffffff25;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #989793;
+}
+.signature {
+  color: var(--paper);
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+@media (min-width: 1600px) {
+  .intro,
+  .header {
+    left: 4vw;
+  }
+  .header {
+    right: 4vw;
+  }
+  .footer {
+    left: 4vw;
+    right: 4vw;
+  }
+}
+@media (max-width: 700px) {
+  .hero {
+    min-height: 720px;
+  }
+  .header {
+    top: 28px;
+    left: 24px;
+    right: 24px;
+  }
+  .wordmark {
+    font-size: 25px;
+  }
+  .header-note {
+    font-size: 10px;
+    max-width: 100px;
+    text-align: right;
+    line-height: 1.5;
+  }
+  .portrait img {
+    object-position: 64% top;
+  }
+  .shade {
+    background:
+      linear-gradient(0deg, rgba(18, 18, 18, 0.82), transparent 65%),
+      linear-gradient(90deg, #15151540, transparent);
+  }
+  .orbit {
+    left: 27%;
+    top: 34%;
+    transform: scale(0.82);
+    transform-origin: top left;
+  }
+  .orbit .coordinate {
+    display: none;
+  }
+  .intro {
+    left: 24px;
+    right: 20px;
+    bottom: 97px;
+  }
+  .specialties {
+    font-size: clamp(23px, 6.5vw, 36px);
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+  .role {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 12px;
+    margin-top: 16px;
+  }
+  .footer {
+    left: 24px;
+    right: 24px;
+    height: 54px;
+    font-size: 9px;
+  }
+  .footer-label {
+    display: none;
+  }
+}
+/* Animate children so pointer parallax remains independent of the entrance. */
+
+.wordmark,
+.specialties {
+  transition: color 0.8s;
+}
+.orbital-track {
+  display: contents;
+}
+.orbit button {
+  position: absolute;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  appearance: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.orbit .disc,
+.orbit .moon {
+  border: 0;
+}
+.orbit button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 9px;
+}
+.orbit button:hover {
+  filter: brightness(1.12);
+}
+.orbit .orbit-readout {
+  display: none;
+}
+.orbit {
+  transition:
+    width 1.2s,
+    height 1.2s,
+    left 1.2s,
+    top 1.2s;
+}
+.portrait canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+.portrait.depth-ready canvas {
+  opacity: 1;
+  animation: fade-in 1.2s both;
+}
+.portrait.depth-ready img {
+  visibility: hidden;
+}
+.portrait.depth-ready {
+  transform: none;
+  will-change: auto;
+}
+.portrait img {
+  animation: portrait-reveal 1.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.portrait img {
+  transform-origin: center top;
+}
+.portrait:not(.depth-ready) {
+  transform: translateX(var(--motion-x));
+  will-change: transform;
+}
+.header {
+  animation: fade-in 1s 0.15s both;
+}
+.intro > * {
+  animation: text-reveal 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.intro .specialties {
+  animation-delay: 0.35s;
+}
+.intro h1 {
+  animation-delay: 0.5s;
+}
+.intro .role {
+  animation-delay: 0.65s;
+}
+.intro .description {
+  animation-delay: 0.8s;
+}
+.footer > * {
+  animation: fade-in 1.2s 1s both;
+}
+.orbit .ring {
+  animation:
+    shape-reveal 1.2s 0.3s cubic-bezier(0.16, 1, 0.3, 1) both,
+    ring-float 8s 1.5s ease-in-out infinite;
+}
+.orbit .disc {
+  animation:
+    shape-reveal 1.2s 0.45s cubic-bezier(0.16, 1, 0.3, 1) both,
+    disc-float 7s 1.65s ease-in-out infinite;
+}
+.orbit .moon {
+  animation:
+    shape-reveal 1.2s 0.6s cubic-bezier(0.16, 1, 0.3, 1) both,
+    moon-float 6s 1.8s ease-in-out infinite;
+}
+.orbit .coordinate {
+  animation: fade-in 1s 1.2s both;
+}
+.hero.is-paused * {
+  animation-play-state: paused !important;
+}
+.scroll-indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 64px;
+  width: 1px;
+  height: 116px;
+  background: rgba(238, 238, 230, 0.28);
+  pointer-events: none;
+  animation: fade-in 1s 1.2s both;
+}
+.scroll-dot {
+  position: absolute;
+  left: -3px;
+  top: 0;
+  width: 7px;
+  height: 7px;
+  background: var(--paper);
+  border-radius: 50%;
+  animation: scroll-down 2.6s 1.2s cubic-bezier(0.45, 0, 0.25, 1) infinite;
+  will-change: transform, opacity;
+}
+@keyframes scroll-down {
+  0% {
+    transform: translateY(4px);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  95%,
+  100% {
+    transform: translateY(108px);
+    opacity: 0;
+  }
+}
+@media (max-width: 700px) {
+  .scroll-indicator {
+    bottom: 54px;
+    height: 88px;
+  }
+  .scroll-dot {
+    animation-name: scroll-down-mobile;
+  }
+  @keyframes scroll-down-mobile {
+    0% {
+      transform: translateY(4px);
+      opacity: 0;
+    }
+    15% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    95%,
+    100% {
+      transform: translateY(80px);
+      opacity: 0;
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-dot {
+    top: 70%;
+    will-change: auto;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes portrait-reveal {
+  from {
+    opacity: 0;
+    transform: scaleX(-1) scale(1.055);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(-1) scale(1);
+  }
+}
+@keyframes text-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes shape-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(45px) scale(0.4);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes ring-float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-9px, -14px);
+  }
+}
+@keyframes disc-float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, 13px);
+  }
+}
+@keyframes moon-float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(8px, -12px);
+  }
+}
+@media (max-width: 700px) {
+  .orbit {
+    transform: translate(
+        calc(var(--motion-x) * -1.5),
+        calc(var(--motion-y) * -1.5)
+      )
+      scale(0.82);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero *,
+  .hero *::before,
+  .hero *::after {
+    animation: none !important;
+  }
+  .portrait,
+  .orbit {
+    will-change: auto;
+    transform: none;
+  }
+  .portrait img {
+    transform: scaleX(-1);
+  }
+  .orbit {
+    transform: scale(0.82);
+    transform-origin: top left;
+  }
+}
+/* The trajectory renderer moves each circle individually; the disc stays fixed. */
+.orbit.orbit-live {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  transition: none;
+  pointer-events: none;
+  will-change: auto;
+}
+.orbit-live .orbital-track {
+  display: contents;
+}
+.orbit.orbit-live button {
+  left: 0;
+  top: 0;
+  animation: none;
+  pointer-events: auto;
+  will-change: transform;
+}
+.orbit.orbit-live .ring {
+  background: transparent;
+}
+.orbit.orbit-live .disc {
+  transition: background-color 0.5s;
+}
+.orbit-paths {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+.orbit-paths ellipse {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 0.65;
+  vector-effect: non-scaling-stroke;
+}
+.orbit.orbit-live .coordinate,
+.orbit.orbit-live .orbit-readout {
+  display: block;
+  left: 0;
+  top: 0;
+  animation: none;
+  color: var(--accent);
+  font: 10px monospace;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.orbit.orbit-live .click-marker {
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.header,
+.intro,
+.footer {
+  z-index: 2;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 40px 48px;
+  transition:
+    padding 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.header.is-scrolled {
+  padding: 18px 48px;
+  background: rgba(21, 21, 21, 0.94);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(238, 238, 230, 0.12);
+}
+@media (min-width: 1600px) {
+  .header {
+    left: 0;
+    right: 0;
+    padding: 40px 4vw;
+  }
+  .header.is-scrolled {
+    padding: 18px 4vw;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 24px;
+  }
+  .header.is-scrolled {
+    padding: 14px 24px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .header {
+    animation: none;
+    transition: none;
+  }
+}
+@media (max-width: 700px) {
+  .orbit.orbit-live .ring {
+    width: 98px;
+    height: 98px;
+    border-width: 28px;
+  }
+  .orbit.orbit-live .disc {
+    width: 98px;
+    height: 98px;
+  }
+  .orbit.orbit-live .moon {
+    width: 39px;
+    height: 39px;
+  }
+  .orbit.orbit-live .coordinate,
+  .orbit.orbit-live .orbit-readout {
+    font-size: 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .orbit.orbit-live button {
+    will-change: auto;
+  }
+}
