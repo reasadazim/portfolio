@@ -1,3 +1,7 @@
+# Portfolio Template for Web Developer
+
+<p align="center"><img align="center" src="https://reasadazim.com/github-images/portfolio.webp" width="100%"/></p>
+
 # portfolio
 
 Personal portfolio built with React, Tailwind CSS, and Vite. The Node.js/Express backend connects the assistant to Gemini and sends contact enquiries through SMTP. An optional PHP backend is also included.
